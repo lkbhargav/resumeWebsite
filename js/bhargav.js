@@ -16,6 +16,8 @@ function regular(backImg,pfontFamily,pfontColor,btnName,btnSett,subHeadColor,mai
     subHead(ele, subHeadColor);
     document.getElementById("mhead").style.color = mainHead;
     document.getElementById("mhead").style.fontFamily = headingFont;
+    document.getElementById("msuhead").style.color = mainHead;
+    document.getElementById("msuhead").style.fontFamily = headingFont;
     document.body.style.backgroundImage = bodyBackImg;
     var ele2 = document.getElementsByClassName("pancolo");
     panColor(ele2, tagClassName);
@@ -88,15 +90,19 @@ function cBtn3()
 function cBtn4()
 {   
     reBut();
-    regular("url('img/ocean.jpg')", "Tahoma, Geneva, sans-serif", "black", "bttn5", "btn btn-info active", "purple", "black", "black", "url('img/oocean.jpg')","'Architects Daughter', cursive","panel panel-danger pancolo","alert alert-danger alerchan","btn btn-danger btnfrm");
+    regular("url('img/ocean.jpg')", "Tahoma, Geneva, sans-serif", "black", "bttn5", "btn btn-info active", "purple", "white", "black", "url('img/oocean.jpg')","'Architects Daughter', cursive","panel panel-danger pancolo","alert alert-danger alerchan","btn btn-danger btnfrm");
 }
             
 function def()
 {   
     reBut();
     regular("none", "'Helvetica Neue', Helvetica, Arial, sans-serif", "black", "bttn1", "btn btn-default active", "black", "white", "white", "none","none","panel panel-default pancolo","alert alert-info alerchan","btn btn-default btnfrm");
-    document.getElementById('mhead').style.opacity = "1"; document.getElementById('mhead').style.textAlign = "center";
+    document.getElementById('mhead').style.opacity = "1"; 
+    document.getElementById('mhead').style.textAlign = "center";
     document.getElementById('mhead').style.font = "60px 'Oleo Script', Helvetica, sans-serif";
+    document.getElementById('msuhead').style.opacity = "1"; 
+    document.getElementById('msuhead').style.textAlign = "center";
+    document.getElementById('msuhead').style.font = "30px 'Oleo Script', Helvetica, sans-serif";
     document.getElementById('bgc').style.background = "none";
     document.getElementById('bgc').style.backgroundColor = "black";
 }
