@@ -117,12 +117,4 @@ function preload() {
     }
 }
 
-
-
-function preventRefresh() {
-    event.preventDefault();
-    document.getElementById("contact").innerHTML = "Thank you for contacting me, I will get back to you soon.";
-    processor();
-}
-
 def();

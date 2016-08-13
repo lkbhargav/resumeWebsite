@@ -12,6 +12,7 @@ function updateXmlHttp() {
 }
 
 function processor() {
+    event.preventDefault();
     
     if(xmlHttp2) {
         
@@ -21,15 +22,21 @@ function processor() {
 
         var message = document.thisform.message.value;
         
-        document.thisform.name.value = "";
-        document.thisform.email.value = "";
-        document.thisform.message.value = "";
-        
-        xmlHttp2.open("GET", "http://32.208.103.211/resumecontact.php?name="+name+"&email="+email+"&message="+message, true);
-        xmlHttp2.onreadystatechange = handleResponse2;
-        xmlHttp2.setRequestHeader("Access-Control-Allow-Origin","*");
-        xmlHttp2.setRequestHeader("Access-Control-Allow-Methods","GET, POST, OPTIONS");
-        xmlHttp2.send();
+        if(name == "" || email == "" || message == "") {
+            document.getElementById("contact").innerHTML = "Please fill the form, before submitting it.";
+        } else {
+            document.thisform.name.value = "";
+            document.thisform.email.value = "";
+            document.thisform.message.value = "";
+            document.getElementById("messleng").innerHTML = "200 / 200 charecters remaining";
+            document.getElementById("contact").innerHTML = "Thank you for contacting me, I will get back to you soon.";
+
+            xmlHttp2.open("GET", "http://32.208.103.211/resumecontact.php?name="+name+"&email="+email+"&message="+message, true);
+            xmlHttp2.onreadystatechange = handleResponse2;
+            xmlHttp2.setRequestHeader("Access-Control-Allow-Origin","*");
+            xmlHttp2.setRequestHeader("Access-Control-Allow-Methods","GET, POST, OPTIONS");
+            xmlHttp2.send();   
+        }
     }
 }
 

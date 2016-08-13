@@ -25,7 +25,6 @@ function process() {
             xmlHttp.onreadystatechange = handleResponse;
             xmlHttp.send(null);
             
-            
         });
     }
 }

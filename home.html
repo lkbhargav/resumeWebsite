@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html data-ng-app="">
     <head> 
         <title> Bhargav Lakkur Kusha Kumar </title>
         <link rel="shortcut icon" href="img/resume.png" />
@@ -21,11 +22,10 @@
         <script type="text/javascript" src="js/bhargav.js"></script>
         <script type="text/javascript" src="js/ajax_file.js"></script>
         <script type="text/javascript" src="js/contactUs.js"></script>
-        <script>
-        </script>
+        
     </head>
     
-    <body onload="process()" data-ng-app="">
+    <body onload="process()">
     <div class="container">
         <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -80,10 +80,10 @@
                         <label>Message</label>
                         <textarea type="text" name="message" maxlength="200" placeholder="Nice work." class="form-control" rows="5" data-ng-model="message" required></textarea>
                         <br/>
-                        <p id="messleng" style="font-style:italic">{{message.length}} / 200 charecters remaining</p>
+                        <p id="messleng" style="font-style:italic">{{200 - message.length}} / 200 charecters remaining</p>
                     </div>
 
-                    <center><input type="submit" value="Submit" class="btn btn-default btnfrm" onclick="preventRefresh()"></center> <br/>
+                    <center><input type="submit" value="Submit" class="btn btn-default btnfrm" onclick="processor()"></center> <br/>
                     <center><p id="contact"></p></center>
                 </form>
         </div>
@@ -94,8 +94,9 @@
         <div class="jumbotron" id="bgc">
 			<div class = "container-fluid">
 				<div class="row row-content">
-					<h2 class="mheading" id="mhead"> Bhargav Lakkur Kusha Kumar </h2> <br>
-                    <center><img src="img/bhargav.jpg" onload="preload()" id="pImage" class="img img-circle img-responsive" height="200" width="200"></center>
+					<h2 class="mheading" id="mhead"> Bhargav Lakkur Kusha Kumar </h2> <br/>
+                    <center><img src="img/bhargav.jpg" onload="preload()" id="pImage" class="img img-circle img-responsive" height="200" width="200"></center> <br/>
+                    <h4 class="msuheading" id="msuhead">+1 (203) 543 2147   |   bhargav.lakkur@gmail.com</h4>
 				</div>
 			</div>
 		</div>
@@ -230,7 +231,7 @@
             </div>
             <br/>
             
-                <div class="row row-content">
+            <div class="row row-content">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3">
                     <div class="alert alert-info alerchan">
                         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -276,7 +277,18 @@
                     </div>
                 </div>
         </div>
-        <br>
+        <br/>
+            
+        <div class="row row-content">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                    <div class="alert alert-info alerchan">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>Note:</strong> You can contact me, using the link on top right corner.
+                    </div>
+                </div>
+        </div>
+            
+        <br/>
         <div id="skil" class="row row-content">
             <div class="col-xs-12 col-sm-6 col-sm-offset-3">
                 <h3 class="hcenter centerid" ><b> Skills </b></h3>
@@ -321,6 +333,8 @@
                             <li> Jquery </li>
                             <li> Bootstrap </li>
                             <li> JSON </li>
+                            <li> AJAX </li>
+                            <li> JDBC </li>
                             <li> XML </li>
                             <li> PHP </li>
                             <li> JSP </li>
@@ -602,8 +616,8 @@
                     <h5>Downloads</h5>
                     <ul class="list-unstyled">
                         <li><a href="files/Resume.pdf" download>Resume</a></li>
-                        <li><a href="files/Transcript.pdf">Transcript</a></li>
-                        <li><a href="files/AI EKG.pdf">AI EKG (work related material)</a></li>
+                        <li><a href="files/Transcript.pdf" download>Transcript</a></li>
+                        <li><a href="files/AI EKG.pdf" download>AI EKG (work related material)</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-6 col-sm-5">
