@@ -1,0 +1,45 @@
+var xmlHttp2 = updateXmlHttp();
+
+function updateXmlHttp() {
+    var xmlHttp2;
+    
+    if(window.XMLHttpRequest)
+        xmlHttp2 = new XMLHttpRequest;
+    else 
+        xmlHttp2 = new ActiveXObject("Microsoft_XMLHTTP");
+    
+    return xmlHttp2;
+}
+
+function processor() {
+    
+    if(xmlHttp2) {
+        
+        var name = document.thisform.name.value;
+
+        var email = document.thisform.email.value;
+
+        var message = document.thisform.message.value;
+        
+        document.thisform.name.value = "";
+        document.thisform.email.value = "";
+        document.thisform.message.value = "";
+        
+        xmlHttp2.open("GET", "http://32.208.103.211/resumecontact.php?name="+name+"&email="+email+"&message="+message, true);
+        xmlHttp2.onreadystatechange = handleResponse2;
+        xmlHttp2.setRequestHeader("Access-Control-Allow-Origin","*");
+        xmlHttp2.setRequestHeader("Access-Control-Allow-Methods","GET, POST, OPTIONS");
+        xmlHttp2.send();
+    }
+}
+
+function handleResponse2() {
+    if(xmlHttp2.readyState == 4 && xmlHttp2.status == 200) {
+        response = xmlHttp2.responseXML;
+        root = response.documentElement;
+        status = root.firstChild;
+        console.log(status);
+    } else {
+        console.log(xmlHttp2.statusText);
+    }
+}
