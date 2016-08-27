@@ -25,7 +25,7 @@
         
     </head>
     
-    <body onload="process()">
+    <body onload="process()" style="background:url('img/odefault.jpg')">
     <div class="container">
         <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -91,12 +91,13 @@
     </div>
   </div>
         
-        <div class="jumbotron" id="bgc">
+        <div class="jumbotron" id="bgc" style="background-image:url(img/resumeBanner.jpg)">
 			<div class = "container-fluid">
 				<div class="row row-content">
 					<h2 class="mheading" id="mhead"> Bhargav Lakkur Kusha Kumar </h2> <br/>
                     <center><img src="img/bhargav.jpg" onload="preload()" id="pImage" class="img img-circle img-responsive" height="200" width="200"></center> <br/>
-                    <h4 class="msuheading" id="msuhead">+1 (203) 543 2147   |   bhargav.lakkur@gmail.com</h4>
+                    <p class="msuheading" id="msuphead"><a href="files/Resume.pdf" class="resumef" style="color:#ffffff" id="resumef" download><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Download Resume</a></p>
+                    <h4 class="msuheading" id="msuhead">+1 (203) 543-2147   |   bhargav.lakkur@gmail.com</h4>
 				</div>
 			</div>
 		</div>
@@ -228,14 +229,14 @@
             </div>
             <br/>
             
-            <div class="row row-content">
+            <!--div class="row row-content">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3">
                     <div class="alert alert-info alerchan">
                         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                         <strong>Note:</strong> You can also download copy of my resume, and additional documents at the end of the page.
                     </div>
                 </div>
-            </div>
+            </div-->
             
             <br/>
             <div id="work" class="row row-content" id="workexp">
@@ -424,7 +425,7 @@
                                 <small>July 2016</small> <br/>
                                 <ol>
                                     <li> This solves the problem of playing flash animations on mobile device.  </li> <br/>
-                                    <li> Different settings can be applied like, speed of the animation, reverse speed, etc.</li> <br/>
+                                    <li> Different settings like, speed of the animation, reverse speed, etc. could be applied.</li> <br/>
                                     <li> Technologies Used: JavaScript, Adobe Flash, Ajax, PHP, Bootstrap, and MySql.</li> <br/>
                                     <li> You can start using it on <a href="http://32.208.103.211/flashAnimation" target="_blank">Flash Library</a></li>
                                 </ol>
@@ -461,7 +462,7 @@
                         </div>
                         <div role="tabpanel" class="panel-collapse collapse" id="chat">
                             <div class="panel-body">
-                                <small>March 2016</small> <br/>
+                                <small>April 2016</small> <br/>
                                 <ol>
                                     <li> Unique emotional intelligence, which gives affirmative meaning to each message using colors. </li> <br/>
                                     <li> Doodles (hand written content), File Sharing (different formats and sizes), and multiplatform among other features. </li> <br/>
@@ -505,7 +506,7 @@
                                 <ol>
                                     <li> Dynamic Java web application to create and manage categories and checklists (tasks in it) itself. </li> <br/>
                                     <li> Flash Animation for heading, JavaScript for validation, Bootstrap and AngularJS for front end and MySql for DB.</li> <br/>
-                                    <li> You can start using it on <a href="http://www.thetodolists.com" target="_blank">ToDo List Application</a></li>
+                                    <!-- li> You can start using it on <a href="http://www.thetodolists.com" target="_blank">ToDo List Application</a></li-->
                                 </ol>
                             </div>
                         </div>
@@ -522,9 +523,10 @@
                             <div class="panel-body">
                                 <small>November 2015</small> <br/>
                                 <ol>
-                                    <li> Game designed as part of Advanced Game Design course using Unity 3D and Assests from asset store.</li> <br/>
+                                    <li> Game designed as part of Advanced Game Design course using Unity 3D and Assets from asset store.</li> <br/>
                                     <li> This game comprises of different challenges and requires the player to collect certain number of coins to win the game.</li> <br/>
-                                    <li> Also it has an inbuilt store enabling user to buy coins, after collecting enough money.</li>
+                                    <li> Also it has an inbuilt store enabling user to buy coins, after collecting enough money.</li> <br />
+                                    <li> Technologies Used: C# and JavaScript</li>
                                 </ol>
                             </div>
                         </div>
@@ -534,18 +536,76 @@
                         <div class="panel-heading" role="tab" id="panhead">
                             <h3 class="panel-title">
                                 <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#todo">
-                                    Ticket Collection App</a>
+                                    Ticket Management Application</a>
                             </h3>
                         </div>
                         <div role="tabpanel" class="panel-collapse collapse" id="todo">
                             <div class="panel-body">
                                 <small>October 2015</small> <br/>
                                 <ol>
-                                    <li> Designed to make the work easier to buy, verify and mange the audience</li> <br/>
+                                    <li> Designed to make the work easier to buy, verify and manage tickets for the events.</li> <br/>
                                     <li> Allowed users to buy tickets for the event</li> <br/>
                                     <li> It recorded the time and other data into the database</li> <br/>
                                     <li> Then on the day of the event, it helped the people in front desk to verify the tickets</li> <br/>
                                     <li> MySql and Java are the software used to realize it</li> <br/>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                            
+                    <div class="panel panel-default pancolo">
+                        <div class="panel-heading" role="tab" id="panhead">
+                            <h3 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#tipp">
+                                   iPhone Timer Application</a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="panel-collapse collapse" id="tipp">
+                            <div class="panel-body">
+                                <small>December 2014</small> <br/>
+                                <ol>
+                                    <li> Created an iOs 7-based Timer application based on Objective C. </li> <br/>
+                                    <li> Very clear and precise display, that can be used by any age group. </li> <br/>
+                                    <li> Technologies Used: Objective C on XCode. </li> <br/>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                            
+                    <div class="panel panel-default pancolo">
+                        <div class="panel-heading" role="tab" id="panhead">
+                            <h3 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#supw">
+                                   Sign Up Page for client website (A N D Technologies Pvt. Ltd.)</a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="panel-collapse collapse" id="supw">
+                            <div class="panel-body">
+                                <small>July 2014</small> <br/>
+                                <ol>
+                                    <li> Entrusted to design and develop interactive registration page as per client requirements.</li> <br/>
+                                    <li> Used JSP for the front end part of the registration page, while using Ajax and XML, along with provided XML Web Services.</li> <br/>
+                                    <li> Best part is that I completed it on time as required.</li> <br/>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                            
+                    <div class="panel panel-default pancolo">
+                        <div class="panel-heading" role="tab" id="panhead">
+                            <h3 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#welp">
+                                    Artificial Intelligence - Electrocardiogram (A N D Technologies Pvt. Ltd.)</a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="panel-collapse collapse" id="welp">
+                            <div class="panel-body">
+                                <small>November 2013</small> <br/>
+                                <ol>
+                                    <li> Worked with a team of five on deigning and developing a prototype for Intel Corporation (Client).  </li> <br/>
+                                    <li> My work was mainly with creating a database and interfacing it with LabView.</li> <br/>
+                                    <li> Technologies Used: National Instruments LabView, MS SQL Server.</li> <br/>
+                                    <li> Use this to see, how it works: <a href="files/AI EKG.pdf"> AI EKG</a></li></li>
                                 </ol>
                             </div>
                         </div>
@@ -580,8 +640,8 @@
                             <div class="panel-body">
                                 <small>March 2013</small> <br/>
                                 <ol>
-                                    <li> Designed and assembled a thermal kiln that is automatically controlled using LabView (Graphical Programming used at industries to automate large machines).</li> <br/>
-                                    <li> Manual work is avoided completey, since it is automated even from the beginning.</li> <br/>
+                                    <li> Designed and assembled a thermal kiln that using LabView (Graphical Programming used at industries to automate large machines) made completely automated.</li> <br/>
+                                    <li> Manual work and the errors prone with it are gone.</li> <br/>
                                 </ol>
                             </div>
                         </div>
@@ -621,23 +681,23 @@
         <div class="container">
             <div class="row">             
                 <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
-                    <h5>Downloads</h5>
+                    <h5><b>Downloads</b></h5>
                     <ul class="list-unstyled">
-                        <li><a href="files/Resume.pdf" download>Resume</a></li>
-                        <li><a href="files/Transcript.pdf" download>Transcript</a></li>
-                        <li><a href="files/AI EKG.pdf" download>AI EKG (work related material)</a></li>
+                        <li><a href="files/Resume.pdf" class="resumef links" download>Resume</a></li>
+                        <li><a href="files/Transcript.pdf" class="links" download>Transcript</a></li>
+                        <li><a href="files/AI EKG.pdf" class="links" download>AI EKG (work related material)</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-6 col-sm-5">
-                    <h5>My Address</h5>
+                    <h5><b>My Address</b></h5>
                     <address>
 		              219 Garfield Avenue, <br/>
                       Bridgeport, CT 06606 <br/>
                       United States of America
                         <br>
-		              <i class="fa fa-phone-square" aria-hidden="true"></i>: +1 203 543 2147<br>
+		              <i class="fa fa-phone-square" aria-hidden="true"></i>: +1 (203) 543-2147<br>
 		              <i class="fa fa-envelope" aria-hidden="true"></i>: 
-                        <a href="mailto:bhargav.lakkur@gmail.com?Subject=General%20Enquiry">bhargav.lakkur@gmail.com</a>
+                        <a href="mailto:bhargav.lakkur@gmail.com?Subject=General%20Enquiry" class="links">bhargav.lakkur@gmail.com</a>
 		           </address>
                 </div>
                 <div class="col-xs-12 col-sm-4">

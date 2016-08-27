@@ -1,3 +1,5 @@
+resumeLink = "files/Resume.docx";
+
 function reBut() {
     document.getElementById("bttn1").className = "btn btn-default";
     document.getElementById("bttn2").className = "btn btn-primary";
@@ -18,12 +20,14 @@ function regular(backImg,pfontFamily,pfontColor,btnName,btnSett,subHeadColor,mai
     document.getElementById("mhead").style.fontFamily = headingFont;
     document.getElementById("msuhead").style.color = mainHead;
     document.getElementById("msuhead").style.fontFamily = headingFont;
+    document.getElementById("msuphead").style.color = mainHead;
+    document.getElementById("msuphead").style.fontFamily = headingFont;
+    document.getElementById("resumef").style.color = mainHead;
     document.body.style.backgroundImage = bodyBackImg;
     var ele2 = document.getElementsByClassName("pancolo");
     panColor(ele2, tagClassName);
     var ele4 = document.getElementsByClassName("alerchan");
     alertColors(ele4, alerClassName);
-                
     var ele5 = document.getElementsByClassName("btnfrm");
     btnColors(ele5, btnClassName);
 }
@@ -96,15 +100,7 @@ function cBtn4()
 function def()
 {   
     reBut();
-    regular("none", "'Helvetica Neue', Helvetica, Arial, sans-serif", "black", "bttn1", "btn btn-default active", "black", "white", "white", "none","none","panel panel-default pancolo","alert alert-info alerchan","btn btn-default btnfrm");
-    document.getElementById('mhead').style.opacity = "1"; 
-    document.getElementById('mhead').style.textAlign = "center";
-    document.getElementById('mhead').style.font = "60px 'Oleo Script', Helvetica, sans-serif";
-    document.getElementById('msuhead').style.opacity = "1"; 
-    document.getElementById('msuhead').style.textAlign = "center";
-    document.getElementById('msuhead').style.font = "30px 'Oleo Script', Helvetica, sans-serif";
-    document.getElementById('bgc').style.background = "none";
-    document.getElementById('bgc').style.backgroundColor = "black";
+    regular("url('img/resumeBanner.jpg')", "'Helvetica Neue', Helvetica, Arial, sans-serif", "black", "bttn1", "btn btn-default active", "black", "white", "white", "url('img/odefault.jpg')","'Oleo Script', Helvetica, sans-serif","panel panel-default pancolo","alert alert-info alerchan","btn btn-default btnfrm");
 }
 
 function preload() {
@@ -114,6 +110,18 @@ function preload() {
     for(var i = 1; i<=8 ; i++) {
         photolu = new Image();
         photolu.src = sources[i-1];
+    }
+    
+    var resDow = document.getElementsByClassName("resumef");
+    
+    for(var i = 0; i < resDow.length; i++) {
+        resDow[i].href = resumeLink;
+    }
+    
+    var linkColor = document.getElementsByClassName("links");
+    
+    for(var i = 0; i < linkColor.length; i++) {
+        linkColor[i].style.color = "darkblue";
     }
 }
 
