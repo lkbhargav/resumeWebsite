@@ -1,4 +1,4 @@
-resumeLink = "files/Resume.docx";
+resumeLink = "files/Resume.pdf";
 
 function reBut() {
     document.getElementById("bttn1").className = "btn btn-default";
@@ -6,6 +6,8 @@ function reBut() {
     document.getElementById("bttn3").className = "btn btn-warning";
     document.getElementById("bttn4").className = "btn btn-success";
     document.getElementById("bttn5").className = "btn btn-info";
+    // document.body.scrollTop is for Chrome, Safari, & Opera. While document.documentElement.scrollTop is for firefox, IE, etc
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
             
 function regular(backImg,pfontFamily,pfontColor,btnName,btnSett,subHeadColor,mainHead,backColor,bodyBackImg,headingFont,tagClassName,alerClassName,btnClassName) {
@@ -101,6 +103,10 @@ function def()
 {   
     reBut();
     regular("url('img/resumeBanner.jpg')", "'Helvetica Neue', Helvetica, Arial, sans-serif", "black", "bttn1", "btn btn-default active", "black", "white", "white", "url('img/odefault.jpg')","'Oleo Script', Helvetica, sans-serif","panel panel-default pancolo","alert alert-info alerchan","btn btn-default btnfrm");
+}
+
+function backToNormal() {
+    document.getElementById("myNavbar").className = "collapse navbar-collapse";
 }
 
 function preload() {

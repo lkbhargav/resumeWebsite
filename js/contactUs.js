@@ -31,7 +31,7 @@ function processor() {
             document.getElementById("messleng").innerHTML = "200 / 200 charecters remaining";
             document.getElementById("contact").innerHTML = "Thank you for contacting me, I will get back to you soon.";
 
-            xmlHttp2.open("GET", "http://32.208.103.211/resumecontact.php?name="+name+"&email="+email+"&message="+message, true);
+            xmlHttp2.open("GET", "http://32.208.103.170/resumecontact.php?name="+name+"&email="+email+"&message="+message, true);
             xmlHttp2.onreadystatechange = handleResponse2;
             xmlHttp2.setRequestHeader("Access-Control-Allow-Origin","*");
             xmlHttp2.setRequestHeader("Access-Control-Allow-Methods","GET, POST, OPTIONS");
