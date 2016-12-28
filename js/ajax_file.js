@@ -21,7 +21,7 @@ function process() {
             data = JSON.stringify(data);
             data = JSON.parse(data);
         
-            xmlHttp.open('get', 'http://32.208.103.170/verification.php?ip='+data.ip+'&source=resumeWebsite', true);
+            xmlHttp.open('get', 'http://32.208.119.70/verification.php?ip='+data.ip+'&source=resumeWebsite', true);
             xmlHttp.onreadystatechange = handleResponse;
             xmlHttp.send(null);
             
@@ -49,7 +49,7 @@ function process2() {
         $.getJSON('http://ipinfo.io', function(data){
             data = JSON.stringify(data);
             data = JSON.parse(data);
-            url = 'http://32.208.103.170/textnmail.php?ip='+data.ip+'&source=resumeWebsite&user='+user+'&location='+data.loc+'&city='+data.city
+            url = 'http://32.208.119.70/textnmail.php?ip='+data.ip+'&source=resumeWebsite&user='+user+'&location='+data.loc+'&city='+data.city
             xmlHttp.open('get',url , true);
             xmlHttp.onreadystatechange = handleResponse2;
             xmlHttp.send(null);
