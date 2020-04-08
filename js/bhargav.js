@@ -110,7 +110,6 @@ function backToNormal() {
 }
 
 function preload() {
-    
     var sources = ['img/space.jpg', 'img/ospace.jpg', 'img/desert.jpg', 'img/odesert.jpg', 'img/forest.jpg', 'img/oforest.jpg', 'img/ocean.jpg', 'img/oocean.jpg'];
     
     for(var i = 1; i<=8 ; i++) {
@@ -130,5 +129,3 @@ function preload() {
         linkColor[i].style.color = "darkblue";
     }
 }
-
-def();

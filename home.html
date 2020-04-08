@@ -691,9 +691,8 @@
                 <div class="col-xs-6 col-sm-5">
                     <h5><b>My Address</b></h5>
                     <address>
-		              219 Garfield Avenue, <br/>
-                      Bridgeport, CT 06606 <br/>
-                      United States of America
+		              45 Savin Hill Avenue, Apt 2 <br/>
+                      Dorchester, MA 02125, USA
                         <br>
 		              <i class="fa fa-phone-square" aria-hidden="true"></i>: +1 (203) 543-2147<br>
 		              <i class="fa fa-envelope" aria-hidden="true"></i>: 
@@ -702,7 +701,6 @@
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <div class="nav navbar-nav" style="padding: 40px 10px;">
-                        <a class="btn btn-social-icon btn-google-plus" href="https://plus.google.com/u/0/getstarted/getstarted?fww=1" target="_blank"><i class="fa fa-google-plus"></i></a>
                         <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/lk.bhargav.5" target="_blank"><i class="fa fa-facebook"></i></a>
                         <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/lkbhargav" target="_blank"><i class="fa fa-linkedin"></i></a>
                         <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/lkbhargav5" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -714,12 +712,19 @@
                 </div>
                 <div class="col-xs-12">
                     <p style="padding:10px;"></p>
-                    <p align=center>&copy; Copyright 2016 Bhargav Lakkur Kusha Kumar</p>
+                    <p align=center>&copy; Copyright <span id="updatedYear"></span> Bhargav Lakkur Kusha Kumar</p>
                 </div>
             </div>
         </div>
     </footer>
 </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            window.addEventListener("load", function() {
+                console.log(document.getElementById("updatedYear"));
+                document.getElementById("updatedYear").innerText = new Date().getFullYear();
+                def();
+            });
+        </script>
     </body>
 </html>
